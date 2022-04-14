@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>ARM Web</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <canvas></canvas>
+    <body>
+        <header class="fade-in">
+            <h1 id = "name">Andrew Mills.</h1>
+            <div is = "sub">
+                <h2 id = "tagline">I build things for the web.</h2>
+                <p id = "pipeDreamer">Web Developer. Pipe Dreamer. All round nice guy.</p>
+            </div>
+        </header>
+        <!-- <nav class="nav" id = myNav>
+            <a href="#aboutMeSection">About Me</a>
+            <a href="#techSection">Technologies</a>
+            <a href="">Projects</a>
+            <a href="#contactSection">Contact</a>
+        </nav> -->
+        <section class = "aboutMe sections fade-in" id = "aboutMeSection">
+            <div id = "myWords">
+                <p>Hi, I'm Andrew.</p>
+                <p>
+                    I first started playing with web technologies seriously in 2020, after leaving my role of 8 years as a Geotechnical Instrumentation Technician.<br/>
+                    I did a lot of work with telemetry solutions, and web technology was a natural pivot for me.<br/> 
+                    I have since completed a diploma in Web Design and Development from the Open Polytechnic in New Zealand, and continue to upskill as much as I can.
+                </p>
+                <p>
+                    Outside of playing with computers, I am also a volunteer firefighter. I love camping and boating, and am currently obsessed with foil boarding.
+                </p>
+            </div>
+            <div id = "mugShotDiv">
+                <img src = "img/mug_shot.jpg" id = "mugShot" alt = "Andrew Mills looking handsome">
+            </div>
+            <div id = "fireDiv">
+                <img src = "img/fire.jpg" id = "fire" alt = "Andrew Mills being a firefighter">
+            </div>
+        </section>
+        <section class="tech sections" id = "techSection">
+            <div id = "techWords">
+                <p>Some of the technologies I have been using lately.</p>
+            </div>
+            <div class = "stack">
+                <ul class = "stackList">
+                    <li><img src="img/html-5.png"></li>
+                    <li><img src="img/css3.png"></li>
+                    <li><img src="img/javascript.png"></li>
+                    <li><img src="img/sass.png"></li>
+                    <li><img src="img/jquery.png"></li>
+                    <li><img src="img/php.png"></li>
+                    <li><img src="img/python.png"></li>
+                    <li><img src="img/r.png"></li>
+                    <li><img src="img/java.png"></li>
+                    <li><img src="img/csharp.png"></li>
+                </ul>
+            </div>
+        </section>
+        <section class = "contact sections fade-in" id = "contactSection">
+            <p>
+                Drop me a line. I'd love to hear from you.
+            </p>
+            <address id = "contact">
+                <a href = "mailto:andrew@armweb.co.nz" id = "email">andrew@armweb.co.nz</a> <br/><br/>
+                <a href = "tel:+64275130311" id = "phone">(+64)27 513 0311</a>
+            </address>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
