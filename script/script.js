@@ -1,3 +1,4 @@
+// Fade in
 $(window).scroll(function() {
     $('.fade-in').each(function() {
         var top_of_element = $(this).offset().top;
@@ -10,6 +11,8 @@ $(window).scroll(function() {
         }
     });
 });
+
+// Stars
 const STAR_COLOR = '#fff';
 const STAR_SIZE = 3;
 const STAR_MIN_SCALE = 0.2;
@@ -37,10 +40,10 @@ resize();
 step();
 
 window.onresize = resize;
-// canvas.onmousemove = onMouseMove;
-// canvas.ontouchmove = onTouchMove;
-// canvas.ontouchend = onMouseLeave;
-// document.onmouseleave = onMouseLeave;
+canvas.onmousemove = onMouseMove;
+canvas.ontouchmove = onTouchMove;
+canvas.ontouchend = onMouseLeave;
+document.onmouseleave = onMouseLeave;
 
 function generate() {
 
