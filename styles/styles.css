@@ -251,18 +251,45 @@ header {
     height: 50vh;
     border-radius: 15%;
     text-align: center;   
+    perspective: 1000px;
 }
-.contact {
+.projectDivInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+.projectDiv:hover .projectDivInner {
+    transform: rotateY(180deg);
+}
+.projectDivFront, .projectDivBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.projectDivFront {
+    background-color:#1f1e20;
+    border-radius: 15%;
+    color: #999999;
+} 
+.projectDivBack {
+    background-color: #afd2e9;
+    border-radius: 15%;
+    color: #1f1e20;
+    transform: rotateY(180deg);
+ }
+#contact {
+    font-size: 1.5rem;
     flex-direction: column;
     border: 1px solid #afd2e9;
     background-color:#1f1e20;
     height: 50vh;
     width: 50vh;
-    margin: auto;
     border-radius: 15%;
-}
-#contact {
-    font-size: 1.5rem;
 }
 .fade-in {
     opacity: 0;
