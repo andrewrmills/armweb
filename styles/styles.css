@@ -245,7 +245,6 @@ header {
 }
 /* End icon animation */
 .projectDiv {
-    border: 1px solid #afd2e9;
     background-color:#1f1e20;
     width: 20vw;
     height: 50vh;
@@ -272,6 +271,7 @@ header {
     backface-visibility: hidden;
 }
 .projectDivFront {
+    border: 1px solid #afd2e9;
     background-color:#1f1e20;
     border-radius: 15%;
     color: #999999;

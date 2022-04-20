@@ -39,11 +39,11 @@ generate();
 resize();
 step();
 
-window.onresize = resize;
-canvas.onmousemove = onMouseMove;
-canvas.ontouchmove = onTouchMove;
-canvas.ontouchend = onMouseLeave;
-document.onmouseleave = onMouseLeave;
+// window.onresize = resize;
+// canvas.onmousemove = onMouseMove;
+// canvas.ontouchmove = onTouchMove;
+// canvas.ontouchend = onMouseLeave;
+// document.onmouseleave = onMouseLeave;
 
 function generate() {
 
