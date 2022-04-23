@@ -244,14 +244,6 @@ header {
     text-align: center;   
     perspective: 1000px;
 }
-.contactDiv {
-    background-color:#1f1e20;
-    width: 50vh;
-    height: 50vh;
-    border-radius: 15%;
-    text-align: center;   
-    perspective: 1000px;
-}
 .projectDivInner, .contactDivInner {
     position: relative;
     width: 100%;
@@ -271,18 +263,42 @@ header {
     backface-visibility: hidden;
 }
 .projectDivFront, .contactDivFront {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #afd2e9;
     background-color:#1f1e20;
     border-radius: 15%;
     color: #999999;
+    
 } 
 .projectDivBack, .contactDivBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #afd2e9;
     border-radius: 15%;
     color: #1f1e20;
     transform: rotateY(180deg);
 }
-#contact a {
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#afd2e9;
+    color: #1f1e20;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15%;
+    text-align: center;   
+    perspective: 1000px;
+}
+.contactText {
+    font-size: 1.5rem;
+}
+.contact a {
     text-decoration: none;
     color: #1f1e20;
 }
