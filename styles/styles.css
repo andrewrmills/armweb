@@ -121,14 +121,6 @@ header {
     color: #999999;
     margin-top: 12rem;
 }
-#contact {
-    text-align: center;
-    padding-bottom: 20vh;
-}
-#contact a {
-    text-decoration: none;
-    color: #999999;
-}
 .sections {
     display: flex;
     height:120vh;
@@ -252,7 +244,15 @@ header {
     text-align: center;   
     perspective: 1000px;
 }
-.projectDivInner {
+.contactDiv {
+    background-color:#1f1e20;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15%;
+    text-align: center;   
+    perspective: 1000px;
+}
+.projectDivInner, .contactDivInner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -260,36 +260,31 @@ header {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-.projectDiv:hover .projectDivInner {
+.projectDiv:hover .projectDivInner, .contactDiv:hover .contactDivInner {
     transform: rotateY(180deg);
 }
-.projectDivFront, .projectDivBack {
+.projectDivFront, .projectDivBack, .contactDivFront, .contactDivBack {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
-.projectDivFront {
+.projectDivFront, .contactDivFront {
     border: 1px solid #afd2e9;
     background-color:#1f1e20;
     border-radius: 15%;
     color: #999999;
 } 
-.projectDivBack {
+.projectDivBack, .contactDivBack {
     background-color: #afd2e9;
     border-radius: 15%;
     color: #1f1e20;
     transform: rotateY(180deg);
- }
-#contact {
-    font-size: 1.5rem;
-    flex-direction: column;
-    border: 1px solid #afd2e9;
-    background-color:#1f1e20;
-    height: 50vh;
-    width: 50vh;
-    border-radius: 15%;
+}
+#contact a {
+    text-decoration: none;
+    color: #1f1e20;
 }
 .fade-in {
     opacity: 0;
