@@ -236,6 +236,15 @@ header {
     }
 }
 /* End icon animation */
+.comingSoon {
+    display: block;
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 2rem;
+}
+.projects {
+    height: 100vh;
+}
 .projectDiv {
     background-color:#1f1e20;
     width: 20vw;
