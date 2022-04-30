@@ -100,62 +100,6 @@ header {
      }
 }
 /* End header fade in animation */
-#name {
-    font-size: 4rem;
-    font-family: 'Waiting for the Sunrise', cursive; 
-}
-.sidenav a, #name {
-    color: #999999;
-}
-#tagline {
-    font-size: 2rem;
-    color: #086788;
-}
-.nav {
-    text-align: center;
-    height: 5rem;
-}
-.nav a {
-    text-decoration: none;
-    padding: 2%;
-    color: #999999;
-    margin-top: 12rem;
-}
-.sections {
-    display: flex;
-    height:120vh;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.aboutMe {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-#mugShot, #fire {
-    max-height: 50vh;
-    max-width: 50vw;
-}
-#myWords {
-    margin:25vh auto 25vh auto;
-    width: 40%;
-}
-@media screen and (max-width: 800px){
-    .aboutMe {
-        flex-direction: row;
-    }
-    #myWords {
-        width: 100%;
-    }
-    #mugShot, #fire {
-        max-width: 35vw;
-    }
-    #stack img {
-        max-width: 9%;
-    }
-}
-.tech {
-    flex-direction: column;
-}
 /* Start icon animation */
 .stackList{
     position: absolute;
@@ -236,6 +180,59 @@ header {
     }
 }
 /* End icon animation */
+#name {
+    font-size: 4rem;
+    font-family: 'Waiting for the Sunrise', cursive; 
+}
+.sidenav a, #name {
+    color: #999999;
+}
+#tagline {
+    font-size: 2rem;
+    color: #086788;
+}
+.nav {
+    text-align: center;
+    height: 5rem;
+}
+.nav a {
+    text-decoration: none;
+    padding: 2%;
+    color: #999999;
+    margin-top: 12rem;
+}
+.sections {
+    display: flex;
+    height:120vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutMe {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#mugShot, #fire {
+    max-height: 50vh;
+    max-width: 50vw;
+}
+#myWords {
+    margin:25vh auto 25vh auto;
+    width: 40%;
+}
+@media screen and (max-width: 800px){
+    .aboutMe {
+        flex-direction: row;
+    }
+    #myWords {
+        width: 100%;
+    }
+    #mugShot, #fire {
+        display: none;
+    }
+}
+.tech {
+    flex-direction: column;
+}
 .comingSoon {
     display: block;
     text-align: center;
@@ -290,6 +287,17 @@ header {
     border-radius: 15%;
     color: #1f1e20;
     transform: rotateY(180deg);
+}
+@media screen and (max-width: 800px){
+    .projects{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .projectDiv{
+        width: 50vh;
+        height: 50vh;
+        margin-top: 10vh;
+    }
 }
 .contactDiv {
     display: flex;
