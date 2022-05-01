@@ -1,16 +1,52 @@
 // Fade in
-$(window).scroll(function() {
-    $('.fade-in').each(function() {
-        var top_of_element = $(this).offset().top;
-        var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
-        var top_of_screen = $(window).scrollTop();
+function revealLeft() {
+  var revealsLeft = document.querySelectorAll(".revealLeft");
 
-        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
-            $(this).addClass('is-visible');
-        }
-    });
-});
+  for (var i = 0; i < revealsLeft.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealsLeft[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      revealsLeft[i].classList.add("active");
+    } else {
+      revealsLeft[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealLeft);
+
+function revealRight() {
+  var revealsRight = document.querySelectorAll(".revealRight");
+
+  for (var i = 0; i < revealsRight.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealsRight[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      revealsRight[i].classList.add("active");
+    } else {
+      revealsRight[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealRight);
+
+// $(window).scroll(function() {
+//     $('.fade-in').each(function() {
+//         var top_of_element = $(this).offset().top;
+//         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+//         var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+//         var top_of_screen = $(window).scrollTop();
+
+//         if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+//             $(this).addClass('is-visible');
+//         }
+//     });
+// });
 
 // Stars
 const STAR_COLOR = '#fff';

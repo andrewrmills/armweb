@@ -319,7 +319,7 @@ header {
     text-decoration: none;
     color: #1f1e20;
 }
-.fade-in {
+/* .fade-in {
     opacity: 0;
     transform: translateY(20vh);
     visibility: hidden;
@@ -330,4 +330,25 @@ header {
     opacity: 1;
     transform: none;
     visibility: visible;
+  } */
+  .revealLeft{
+	position: relative;
+	transform: translateX(100vw);
+	opacity: 0;
+	transition: 3s all ease;
+  }
+  .revealRight{
+	position: relative;
+	transform: translateX(-100vw);
+	opacity: 0;
+	transition: 3s all ease;
+  }
+  
+  .revealLeft.active{
+	transform: translateX(0);
+	opacity: 1;
+  }
+  .revealRight.active{
+	transform: translateX(0);
+	opacity: 1;
   }
