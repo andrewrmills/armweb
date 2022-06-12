@@ -233,6 +233,10 @@ header {
 .projects {
     height: 100vh;
 }
+.projects a {
+    text-decoration: none;
+    color: #1f1e20;
+}
 .projectDiv {
     background-color:#1f1e20;
     width: 20vw;
