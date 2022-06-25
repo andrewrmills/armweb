@@ -245,6 +245,9 @@ header {
     text-align: center;   
     perspective: 1000px;
 }
+.projectPic{
+    max-height: 150px;
+}
 .projectDivInner, .contactDivInner {
     position: relative;
     width: 100%;
