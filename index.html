@@ -49,7 +49,7 @@
                 </ul>
             </div>
         </header>
-        <section class = "aboutMe sections revealLeft" id = "aboutMeSection">
+        <section class = "aboutMe sections revealLeft scrollFade" id = "aboutMeSection">
             <div id = "myWords">
                 <h3>Hi, I'm Andrew.</h3>
                 <p>
@@ -65,14 +65,14 @@
             <div id = "techDiv">
                 <h3>Technologies I am familiar with</h3>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>PHP</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
+                    <li><span class="iconify" data-icon="icon-park-outline:html-five"  data-width="20"></span>HTML</li>
+                    <li><span class="iconify" data-icon="uil:html3-alt"  data-width="20"></span>CSS</li>
+                    <li><span class="iconify" data-icon="tabler:brand-javascript"  data-width="20"></span>JavaScript</li>
+                    <li><span class="iconify" data-icon="mdi:react"  data-width="20"></span>React</li>
+                    <li><span class="iconify" data-icon="fontisto:php" data-width="20"></span>PHP</li>
+                    <li><span class="iconify" data-icon="mdi:language-java" data-width="20"></span>Java</li>
+                    <li><span class="iconify" data-icon="teenyicons:c-sharp-outline" data-width="20"></span>C#</li>
+                    <li><span class="iconify" data-icon="tabler:brand-python" data-width="20"></span>Python</li>
                 </ul>
             </div>
             <div id="photos">
@@ -85,8 +85,8 @@
             </div>
 
         </section>
-        <span class = "comingSoon revealRight">Some of my recent projects.</span>
-        <section class = "projects sections revealRight" id = "projectSection">
+        <span class = "recentProjects revealRight scrollFade">Some of my recent projects.</span>
+        <section class = "projects sections revealRight scrollFade" id = "projectSection">
             <div class = "projectDiv">
                 <div class = "projectDivInner">
                     <div class = "projectDivFront" id = project1>
@@ -96,7 +96,7 @@
                         <a href="https://www.armweb.co.nz/nbvfb" target = "_blank">
                             <h3>New Brighton Volunteer Fire Brigade</h3>
                             A work in progress.</br></br>
-                            Vanilla HTML, CSS and Javascript
+                            <em>HTML</em> | <em>CSS</em> | <em>Javascript</em>
                         </a>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                         <a href="https://www.armweb.co.nz/jammming" target = "_blank">
                             <h3>Jammming</h3>
                             Make Spotify playlists and save them to your profile.</br></br>
-                            Built with React.
+                            <em>React</em>
                             
                         </a>
                     </div>
@@ -125,13 +125,13 @@
                         <a href="https://www.mblogistics.co.nz" target = "_blank">
                             <h3>MB Logistics</h3>
                             A simple website for a local courier company.</br></br>
-                            Built with Bootstrap.
+                            <em>HTML</em> | <em>CSS</em> | <em>Bootstrap</em> | <em>Javascript</em>
                         </a>
                     </div>
                 </div>
             </div>  
         </section>
-        <section class = "contact sections revealLeft" id = "contactSection">
+        <section class = "contact sections revealLeft scrollFade" id = "contactSection">
             <address id = "contact">
                 <div class = "contactDiv">
                     <span class = "contactText">Drop me a line,<br/> I'd love to hear from you.</span>
@@ -144,5 +144,6 @@
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="script/script.js"></script>
+        <script src="./script/scrollfade.js"></script>
     </body>
 </html>
