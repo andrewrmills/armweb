@@ -234,23 +234,6 @@ header {
     width: 20vw;
     padding-top: 10vh;;
 }
-@media screen and (max-width: 800px){
-    .aboutMe {
-        flex-direction: row;
-    }
-    #myWords {
-        width: 100%;
-        margin-bottom: 5vh;
-    }
-    #mugShot{
-        width: 60vw;
-        padding-top: 0;
-        padding-bottom: 10vh;    
-    }
-    #fire {
-        display: none;
-    }
-}
 .recentProjects {
     display: block;
     text-align: center;
@@ -335,7 +318,23 @@ header {
 }
 @media screen and (max-width: 800px){
     .sections{
-        height: 100vh;
+        height: 150vh;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+    }
+    #myWords {
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+    #mugShot{
+        width: 60vw;
+        padding-top: 0;
+        padding-bottom: 10vh;    
+    }
+    #fire {
+        display: none;
     }
     .projects{
         flex-direction: column;
