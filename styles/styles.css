@@ -375,8 +375,9 @@ header {
         display: none;
     }
     .projects{
+        display: flex;
         flex-direction: column;
-        height: 200vh;
+        height: 300vh;
     }
     .projectDiv{
         width: 80vw;
