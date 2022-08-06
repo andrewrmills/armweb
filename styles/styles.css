@@ -234,14 +234,43 @@ header {
     width: 20vw;
     padding-top: 10vh;;
 }
+
+.projects {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 20% 40% 40%;
+}
 .recentProjects {
+    grid-column-start: 2;
+    grid-column-end: 4;
     display: block;
     text-align: center;
     padding-top: 20vh;
     font-size: 2rem;
 }
-.projects {
-    height: 100vh;
+.nbvfbProject {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+}
+.jammingProject {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+}
+.mbProject {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+}
+.hortProject {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: center;
+}
+.projects p {
+    margin: 0 5px 20px 5px;
 }
 .projects a {
     text-decoration: none;
@@ -358,27 +387,6 @@ header {
         height: 80vw;
     }
 }
-  /* .revealLeft{
-	position: relative;
-	transform: translateX(10vw) translateY(10vh);
-	opacity: 0;
-	transition: 3s all ease;
-  }
-  .revealRight{
-	position: relative;
-	transform: translateX(-10vw) translateY(10vh);
-	opacity: 0;
-	transition: 3s all ease;
-  }
-  
-  .revealLeft.active{
-	transform: translateX(0) translateY(0);
-	opacity: 1;
-  }
-  .revealRight.active{
-	transform: translateX(0) translateY(0);
-	opacity: 1;
-  } */
   .scrollFade {
     opacity: 1;
     pointer-events: all;
