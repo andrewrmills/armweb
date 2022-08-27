@@ -186,57 +186,53 @@ header {
 }
 .sections {
     display: flex;
-    height:120vh;
+    min-height:120vh;
     justify-content: space-evenly;
     align-items: center;
 }
 .aboutMeContainer{
-    background-color: #afd2e9;
+    /* background-color: #afd2e9; */
     padding: 20px;
     border-radius: 30px;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin:25vh 2vw 25vh 2vw;
     perspective: 1000px;
+    justify-self: center;
+    font-size: 1.2rem;
+}
+#myWords, #helpDiv {
+    color: #1f1e20;
+    border: 1px solid #7c9cb1;
+    background-color:#ececec;
+    border-radius: 10px;   
+    padding: 20px;
 }
 #myWords {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
-    height: 45vh;
-    color: #1f1e20;
-    border: 1px solid #1f1e20;
-    background-color:#ececec;
-    border-radius: 30px;
-    padding: 5%;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-bottom: 2vh;
 }
 #mugShot {
-    width: 20vw;
+    width: 15vw;
     float: right;
     padding-left: 20px;
     border-radius: 30px;
 }
-/* #photos {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    justify-self: center;
-} */
 #techDiv {
-    grid-column: 3;
-    grid-row: 1;
-    height: 45vh;
+    grid-column: 1;
+    grid-row: 4;
     width: 30vw;
     justify-self: center;
     border: 1px solid #e4e4e4;
     background-color:#1f1e20;
-    border-radius: 30px;
+    border-radius: 11px;
     padding: 5%;
 }
-#techDiv h2{
+.aboutMeContainer h2{
     text-align: center;
 }
 #techDiv ul {
@@ -244,20 +240,17 @@ header {
     columns: 2;
 }
 #helpDiv{
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4;
-    grid-row: 2;
-    height: 45vh;
-    color: #1f1e20;
-    border: 1px solid #1f1e20;
-    background-color:#ececec;
-    border-radius: 30px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 55vw;
+    justify-self: end;
+    padding: 0 20px 0 20px;
 }
-/* #fire {
-    width: 20vw;
-    padding-top: 10vh;;
-} */
-
+#helpDiv ul {
+    list-style: none;
+}
 .projects {
     height: 150vh;
     display: grid;
@@ -374,28 +367,71 @@ header {
     text-decoration: none;
     color: #1f1e20;
 }
-@media screen and (max-width: 800px){
-    .sections{
-        height: 150vh;
+@media screen  and (max-width: 1700px) {
+    .aboutMe{
+        height: 200vh;
     }
-    .aboutMe {
+    .aboutMeContainer{
+        height: 120vh;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    .sections{
+        height: 200vh;
+    }
+    .aboutMeContainer{
+        height: 200vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #myWords{
+        grid-column:1;
+        grid-row:1;
+        height: 100%;
+        margin-left: 80px;
+    }
+    #helpDiv{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        width: 80vw;
+        height: 100%;
+        justify-self: center;
+        margin-top: 15px;
+    }
+    #techDiv{
+        grid-column:2;
+        grid-row:1;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 800px){
+    .aboutMe{
+        height: 400vh;
+        font-size: 1rem;
+    }
+    .aboutMeContainer {
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
     #myWords {
         width: 100%;
+        height: 100%;
+        margin-left: 0;
         margin-bottom: 5vh;
     }
     #mugShot{
-        width: 60vw;
+        width: 20vw;
         padding-top: 0;
         padding-bottom: 10vh;    
     }
     #techDiv {
         align-self: center;
-    }
-    #fire {
-        display: none;
+        width: 100%;
+        height: 100%;
     }
     .projects{
         display: flex;
