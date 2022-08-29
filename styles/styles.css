@@ -368,6 +368,7 @@ header {
     height: 50vh;
     border-radius: 15%;
     text-align: center;   
+    perspective: 1000px;
     
 }
 .contactText {
