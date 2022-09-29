@@ -191,13 +191,12 @@ header {
     align-items: center;
 }
 .aboutMeContainer{
-    /* background-color: #afd2e9; */
     padding: 20px;
     border-radius: 30px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 1fr 5% 1fr;
     margin:25vh 2vw 25vh 2vw;
     perspective: 1000px;
     justify-self: center;
@@ -211,11 +210,9 @@ header {
     padding: 20px;
 }
 #myWords {
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-column: 2;
+    grid-row: 1;
     margin-bottom: 2vh;
-    /* max-height: 800px; */
     height: fit-content;
 }
 #mugShot {
@@ -224,8 +221,8 @@ header {
     padding-left: 20px;
 }
 #techDiv {
-    grid-column: 1;
-    grid-row: 4;
+    grid-column: 3;
+    grid-row: 3;
     width: 30vw;
     height: fit-content;
     max-height: 300px;
@@ -242,7 +239,7 @@ header {
     list-style: none;
     columns: 2;
 }
-#doDiv {
+/* #doDiv {
     border-bottom: 1px solid #1f1e20;
     padding: 10px;
     margin-top: 5px;
@@ -254,13 +251,12 @@ header {
     grid-row-end: 5;
     width: 55vw;
     height: fit-content;
-    /* max-height: 1450px; */
     justify-self: end;
     padding: 0 20px 0 20px;
 }
 #helpDiv ul {
     list-style: none;
-}
+} */
 .projects {
     height: 150vh;
     display: grid;
@@ -386,11 +382,11 @@ header {
         height: 120vh;
     }    
 }
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     .sections{
         height: 200vh;
     }
-    .aboutMeContainer{
+     .aboutMeContainer{
         height: 200vh;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -413,21 +409,21 @@ header {
         grid-column:2;
         grid-row:1;
     }
-}
+} */
 @media screen and (max-width: 800px){
     .aboutMe{
-        height: 400vh;
+        height: 200vh;
         font-size: 1rem;
     }
     .aboutMeContainer {
         height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     #myWords {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         margin-left: 0;
         margin-bottom: 5vh;
@@ -435,9 +431,6 @@ header {
     #mugShot{
         display: block;
         width: 100%;
-        justify-self: center;
-        padding-top: 0;
-        padding-bottom: 10vh;    
     }
     #techDiv {
         align-self: center;
